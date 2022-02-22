@@ -1,0 +1,39 @@
+.p-tabs {
+  border-bottom: 1px solid #d9dcf0;
+  margin-bottom: 16px;
+  position: relative;
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      color: #36404a;
+      text-align: center;
+      padding: 0 6px;
+      cursor: pointer;
+      font-size: 15px;
+      min-width: 107px;
+      height: 35px;
+      line-height: 35px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+
+      span {
+        margin-left: 5px;
+      }
+
+      &:hover,
+      &.act {
+        font-weight: bold;
+        color: #fff;
+        background: url('~@/assets/images/bg_zt.png') no-repeat;
+        background-color: #4a62ce;
+      }
+    }
+  }
+}
