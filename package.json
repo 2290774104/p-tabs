@@ -1,6 +1,6 @@
 {
   "name": "p-tabs",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/p-tabs.common.js",
   "typings": "types/index.d.ts",
   "private": false,
@@ -15,7 +15,6 @@
     "preminor": "npm version preminor",
     "patch": "npm version patch",
     "publish": "npm publish"
-
   },
   "dependencies": {
     "codemirror": "^5.58.2",
