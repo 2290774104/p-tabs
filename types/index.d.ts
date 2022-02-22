@@ -6,3 +6,9 @@ import Vue from 'vue'
 
 // now
 export function install(vue: typeof Vue): void
+
+export interface ITab {
+  label: string
+  total?: number | string
+  code: string
+}
