@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
   lintOnSave: false,
-  publicPath: process.env.NODE_ENV === 'production' ? '/el-lists/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/p-tabs/' : '/',
   configureWebpack: {
     resolve: {
       extensions: ['.js', '.ts', '.vue', '.json']

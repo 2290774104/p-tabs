@@ -14,11 +14,18 @@ export default class PTabs extends Vue {
   @Prop({ type: Array, default: () => [] }) private readonly tabs!: ITab[]
 
   // v-model 双向绑定值
-  @Model('change', { type: String, required: true }) private readonly value!: string
+  @Model('tabChange', { type: String, required: true }) private readonly value!: string
 
   // 选中tab变更
   @Emit('change')
-  private tabChange(tab: ITab): string {
+  private change(tab: ITab): ITab {
+    return tab
+  }
+
+  // 更新 v-model
+  @Emit('tabChange')
+  private tabChange(tab: ITab) {
+    this.change(tab)
     return tab.code
   }
 

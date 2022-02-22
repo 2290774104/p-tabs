@@ -19,8 +19,8 @@ export default class App extends Vue {
     { code: '4', label: '已取消', total: '10' },
   ]
 
-  private change(val: string) {
-    console.log(val)
+  private change(tab: any) {
+    this.$message.success(`选中 ${tab.label} 的tab标签`)
   }
 }
 </script>
