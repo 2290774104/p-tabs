@@ -33,7 +33,9 @@ export default class PTabs extends Vue {
       if (tab.code !== this.value) {
         // 先更新v-model，在触发变更事件
         this.tabChange(tab)
-        this.change(tab)
+        setTimeout(() => {
+          this.change(tab)
+        });
       }
     }
 
