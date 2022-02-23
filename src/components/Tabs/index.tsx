@@ -25,14 +25,15 @@ export default class PTabs extends Vue {
   // 更新 v-model
   @Emit('tabChange')
   private tabChange(tab: ITab) {
-    this.change(tab)
     return tab.code
   }
 
   render(h: CreateElement) {
     const tabClick = (tab: ITab) => {
       if (tab.code !== this.value) {
+        // 先更新v-model，在触发变更事件
         this.tabChange(tab)
+        this.change(tab)
       }
     }
 
